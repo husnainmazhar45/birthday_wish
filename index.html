@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Ulia!</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+    .birthday-card {
+      background-color: #FFDAB9; /* Changed card color to PeachPuff */
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+      border: 4px solid #ffa07a; /* Added border with LightSalmon color */
+      width: 80%; /* Adjusted width to make the card larger */
+      margin: 0 auto; /* Center the card horizontally */
+    }
+    .layer1 {
+      background-color: #f7d794;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px; /* Smaller border-radius */
+      z-index: -1;
+    }
+    .layer2 {
+      background-color: #f78fb3;
+      position: absolute;
+      top: 5px; /* Adjusted position */
+      left: 5px; /* Adjusted position */
+      width: calc(100% - 10px); /* Adjusted width */
+      height: calc(100% - 10px); /* Adjusted height */
+      border-radius: 15px; /* Smaller border-radius */
+      z-index: -2;
+    }
+    h1, h2, h3 {
+      color: #333;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .birthday-wish {
+      margin-bottom: 30px;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+    .profile-pic {
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 10px solid #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: bounceIn 3s ease forwards;
+      width: 200px; /* Larger width */
+      height: 200px; /* Larger height */
+    }
+    .balloons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .balloon-img {
+      width: 100px;
+      margin: 0 10px;
+    }
+    .footer-text {
+      font-size: 18px;
+      color: #888;
+      margin-top: 20px;
+    }
+
+    /* Change form color to red */
+    input[type="text"], input[type="email"], textarea {
+      background-color: #ffcccc;
+    }
+
+    /* Keyframes */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounceIn {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="birthday-card text-center">
+      <div class="layer1"></div>
+      <div class="layer2"></div>
+      <img src="/images/WhatsApp Image 2024-03-14 at 16.09.16_3bb1113f.jpg" alt="Aulia's Picture" class="profile-pic img-fluid">
+      <h1>Happy Birthday, Ulia Khokhar!</h1>
+      <div class="birthday-wish">
+        <p>The version that you possess is the best version that one should have.. Braveness with smiling face</p>
+        <p>Here's to another amazing year ahead!</p>
+      </div>
+      <div class="balloons">
+        <img src="/images/download (1).jpeg" alt="Balloon" class="balloon-img">
+        <img src="/images/download.jpeg" alt="Balloon" class="balloon-img">
+        <img src="/images/download (1).jpeg" alt="Balloon" class="balloon-img">
+      </div>
+      <p class="footer-text">Best Wishes,<br>Husnain Mazhar</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
